@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerater</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="minproj.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="contaner">
+
+            <h1 class="main_heading">Password Generator</h1>
+
+            <div class="disply_container">
+
+                <input readonly placeholder="Password" class="disply" data-PasswordDisply>
+
+                <button class="copy_btn" data-copy>
+                    <span class="tool_tip" data-copyMsg></span>
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1260468262/display_1500/stock-vector-copy-content-vector-icon-document-icon-isolated-on-white-background-copy-file-document-symbol-1260468262.jpg" 
+                    alt="" >
+                </button>
+
+            </div>
+
+            <div class="input_contaner">
+
+                <div class="length_contaner">
+                    <p>Password Length</p>
+                    <p data_length_Number >0</p>
+                </div>
+
+                <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+                <div class="check">
+                    <input type="checkbox" id="upperCase">
+                    <label for="upperCase">Includs uppercase latter</label>
+                </div>
+
+                <div class="check"> 
+                    <input type="checkbox" id="lowerCase">
+                    <label for="upperCase">Includs lowercase latter</label>
+                </div>
+
+
+                <div class="check">
+                    <input type="checkbox" id="numberCase">
+                    <label for="upperCase">Includ Numbers</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="SymbleCase">
+                    <label for="upperCase">Includ Symbles</label>
+                </div>
+
+                <div class="strenght_contaner">
+                    <p>Strenght</p>
+                    <div class="indicater" data-indicater></div>
+                </div>
+
+                <button class="GenerateButton">Generate Password</button>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="miniproj.js"></script>
+
+</body>
+</html>
